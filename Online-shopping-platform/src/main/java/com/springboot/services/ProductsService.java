@@ -22,8 +22,8 @@ public class ProductsService {
 		return ProductRepo.findById(Id).orElse(null);
 	}
 	
-	public List<Products> searchProducts(String keyword) {
-        return ProductRepo.findByNameContaining(keyword);
+	public List<Products> searchProducts(String productName) {
+        return ProductRepo.findByProductNameContaining(productName);
     }
 	
 	public Products createProducts(Products products) {

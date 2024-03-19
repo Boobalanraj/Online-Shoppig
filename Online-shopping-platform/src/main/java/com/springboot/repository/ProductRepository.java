@@ -10,6 +10,6 @@ import com.springboot.entity.Products;
 @Repository
 public interface ProductRepository extends JpaRepository<Products,Long> {
 
-	 List<Products> findByNameContaining(String keyword);
+	 List<Products> findByProductNameContaining(String productName);
 	
 }

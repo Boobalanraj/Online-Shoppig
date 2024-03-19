@@ -3,10 +3,12 @@ package com.springboot.services;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.springboot.entity.OrderTracking;
 import com.springboot.repository.OrderTrackingRepository;
 
+@Service
 public class OrderTrackingService {
 
 	@Autowired
